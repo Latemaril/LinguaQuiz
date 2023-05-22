@@ -1,0 +1,80 @@
+#l-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 70px;
+}
+
+.m-button__menu * {
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+#l-menu,
+#l-menu nav,
+#l-menu ul,
+#l-menu button {
+    height: 100%;
+}
+
+#l-menu button {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+#l-menu ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.m-button__menu li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 1.5em;
+    overflow: hidden;
+}
+
+.m-button__menu button {
+    padding: 0.3em 0;
+    color: #3A4E79FF;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin: 0;
+    text-decoration: none;
+}
+
+.m-button__menu button:before,
+.m-button__menu button:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+.m-button__menu button:before {
+    bottom: 100%;
+    display: block;
+    height: 3px;
+    width: 100%;
+    content: "";
+    border-radius: 10px;
+    background-color: var(--LinguaQuiz--color--violet);
+}
+.m-button__menu button:after {
+    padding: 0.8em 0;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    content: attr(data-hover);
+    color: #1c4eb1;
+    white-space: nowrap;
+}
+.m-button__menu li:hover button,
+.m-button__menu .current button {
+    will-change: transform;
+    transform: translateY(100%);
+}
+

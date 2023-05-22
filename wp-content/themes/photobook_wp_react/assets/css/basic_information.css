@@ -1,0 +1,21 @@
+#l-basic_information {
+    /*margin: 0 auto;*/
+    padding: 105px 0;
+    width: 100%;
+}
+
+#l-basic_information > article {
+    width: 1030px;
+    margin: 0 auto;
+    padding-top: 155px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#l-basic_information article:first-of-type div:last-of-type,
+#l-basic_information article:last-of-type div:first-of-type{
+    border-radius: 20px;
+    overflow: hidden;
+}
