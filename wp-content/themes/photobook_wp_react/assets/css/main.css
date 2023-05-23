@@ -46,6 +46,16 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'VAG World Bold';
+    src: url('../fonts/VAG_world_bold/vag_world_bold.eot'); /* IE 9 Compatibility Mode */
+    src: url('../fonts/VAG_world_bold/vag_world_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('../fonts/VAG_world_bold/vag_world_bold.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/VAG_world_bold/vag_world_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('../fonts/VAG_world_bold/vag_world_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/VAG_world_bold/vag_world_bold.svg#vag_world_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
 :root {
     --LinguaQuiz--color--light-violet: rgba(50, 34, 246, 0.71);
     --LinguaQuiz--color--violet: #8013F5;
@@ -61,14 +71,18 @@
 }
 
 html {
-    min-width: 1440px;
+    width: 100vw;
 
     font-family: 'Roboto', sans-serif;
 
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
-body {min-width: 1440px;}
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
 
 h1 {
     font-size: 52px;
