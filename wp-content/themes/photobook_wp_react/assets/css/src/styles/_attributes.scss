@@ -1,0 +1,50 @@
+[am-Grid-Row] {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+
+[am-Grid-Col] {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Reverse order */
+[am-Grid-Row~="reverse"] {
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+}
+
+/* Distribution */
+[am-Grid-Row~="between"] { justify-content: space-between; }
+[am-Grid-Row~="center"] { justify-content: center; }
+
+/* Alignment per row */
+/* Horizontal */
+[am-Grid-Row~="start"] {
+  justify-content: flex-start;
+  text-align: start;
+}
+
+[am-Grid-Row~="end"] {
+  justify-content: flex-end;
+  text-align: end;
+}
+
+[am-Grid-Row~="center"] {
+  justify-content: center;
+  text-align: center;
+}
+
+/* Vertical */
+[am-Grid-Row~="top"] { align-items: flex-start; }
+[am-Grid-Row~="bottom"] { align-items: flex-end; }
+[am-Grid-Row~="middle"] { align-items: center; }
+
+/* Alignment per column */
+[am-Grid-Col~="top"] { align-self: flex-start; }
+[am-Grid-Col~="bottom"] { align-self: flex-end; }
+[am-Grid-Col~="middle"] { align-self: center; }
+
+
