@@ -15,7 +15,7 @@ get_header();
 ?>
 <header id="l-header">
     <div class="logo">
-        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/quiz_logo.png" alt="">
+        <h1>LinguaQuiz</h1>
     </div>
     <nav id="l-menu">
         <ul class="m-button__menu">
@@ -30,7 +30,7 @@ get_header();
 </header>
 <article id="l-announcement">
     <div class="announcements">
-        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/slider/slider_img_1.png" alt="">
+        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/slider/anonses.jpg" alt="">
     </div>
 </article>
 <section id="l-basic_information">
@@ -63,7 +63,7 @@ get_header();
         <div>
             <h2>Пробный квиз</h2>
             <p>Вы хотите проверить свои знания и узнать что-то новое? Тогда пройдите наш пробный квиз и получите персональный результат!Ответьте на все вопросы и узнайте свой уровень знаний! Не упустите шанс стать умнее и веселее с нашим пробным квизом!</p>
-            <button class="m-button__trial button" disabled>ПОПРОБОВАТЬ</button>
+            <button class="m-button__trial button js-button__trial">ПОПРОБОВАТЬ</button>
         </div>
         <div>
             <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/trial_quiz/trial_quiz.png" alt="">

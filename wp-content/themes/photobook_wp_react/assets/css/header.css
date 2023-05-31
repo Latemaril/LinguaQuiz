@@ -14,6 +14,29 @@
     transition: all 0.35s ease;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    height: 100%;
+}
+
+.logo h1 {
+    height: 100%;
+    font-family: 'VAG World Bold', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 50px;
+
+    background: linear-gradient(267.62deg, #FF9040 0%, #F4802C 30.73%, #E76C13 69.79%, #FF7918 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#l-menu {
+    padding-right: 15px;
+}
+
 #l-menu,
 #l-menu nav,
 #l-menu ul,
@@ -40,7 +63,7 @@
 
 .m-button__menu button {
     padding: 0.3em 0;
-    color: #3A4E79FF;
+    color: #223255;
     position: relative;
     display: inline-block;
     letter-spacing: 1px;
@@ -57,11 +80,11 @@
 .m-button__menu button:before {
     bottom: 100%;
     display: block;
-    height: 3px;
+    height: 5px;
     width: 100%;
     content: "";
     border-radius: 10px;
-    background-color: var(--LinguaQuiz--color--violet);
+    background-color: #138cff94;
 }
 .m-button__menu button:after {
     padding: 0.8em 0;
@@ -69,7 +92,6 @@
     bottom: 100%;
     left: 0;
     content: attr(data-hover);
-    color: #1c4eb1;
     white-space: nowrap;
 }
 .m-button__menu li:hover button,

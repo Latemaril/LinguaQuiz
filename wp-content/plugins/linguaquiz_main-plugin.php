@@ -20,7 +20,9 @@ add_action('wp_enqueue_scripts','media_init');
 
 function drives_include() {
 
+    wp_register_script('drives1',get_template_directory_uri() . '/assets/js/quiz_redirect.js');
 
+    wp_enqueue_script('drives1');
 }
 add_action('wp_enqueue_scripts','drives_include');
 

@@ -1,7 +1,17 @@
 #l-announcement {
+    position: relative;
     width: 100%;
     height: calc(100vh - 70px);
     overflow: hidden;
+}
+
+#l-announcement::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: calc(100vh - 70px);
+    top: 0;
+    box-shadow: inset 0px 0px 120px 40px rgba(0, 0, 0, 0.3);
 }
 
 .announcements {

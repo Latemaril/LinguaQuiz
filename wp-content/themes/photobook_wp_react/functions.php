@@ -36,10 +36,6 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 function add_js_to_head() {
     echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>';
-    // For DragAndDrop work
-    // For JSX work
-    echo '<script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>';
-    echo '<script src="https://accounts.google.com/gsi/client"  async defer></script>';
 }
 // Add hook for admin <head></head>
 add_action( 'admin_head', 'add_js_to_head' );

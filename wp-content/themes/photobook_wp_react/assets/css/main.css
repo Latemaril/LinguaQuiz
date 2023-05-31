@@ -130,15 +130,3 @@ textarea {
     padding-top: 8px;
     resize: none;
 }
-
-.wrapper {
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-
-    width: 1030px;
-
-    padding: 0 15px;
-    margin: 0 auto;
-}
