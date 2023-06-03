@@ -6,9 +6,9 @@ let autoprefixBrowsers = ['last 15 version'];
 const sass = require('gulp-sass')(require('sass'));
 
 gulp.task('sass', function () {
-    return gulp.src('wp-content/themes/photobook_wp_react/assets/css/*.scss')
-        .pipe(sass.sync({outputStyle: 'compressed'}).on('error', sass.logError))
-        .pipe(gulp.dest('wp-content/themes/photobook_wp_react/assets/css/css_output'));
+    return gulp.src('wp-content/themes/photobook_wp_react/assets/css/src/**/*.scss')
+        .pipe(sass.sync().on('error', sass.logError))
+        .pipe(gulp.dest('wp-content/themes/photobook_wp_react/assets/css/styles_output'));
 });
 
 gulp.task('autoprefixer', function () {
@@ -30,5 +30,5 @@ gulp.task('minify-js', function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch('wp-content/themes/photobook_wp_react/assets/css/*.css', gulp.series('autoprefixer'));
+    gulp.watch('wp-content/themes/photobook_wp_react/assets/css/src/**/*.scss', gulp.series('sass'));
 });

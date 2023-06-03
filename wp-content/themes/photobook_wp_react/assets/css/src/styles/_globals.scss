@@ -1,12 +1,19 @@
 html,body {
   min-height: 100%;
+
+  font-family: "Roboto", sans-serif;
   text-rendering: optimizeLegibility;
+
   background: $white;
   color: $black;
 }
 
+img {
+  max-width: 100%;
+}
+
 h1 {
-  font-size: 52px;
+  font-size: 60px;
   text-align: center;
 }
 h2 {

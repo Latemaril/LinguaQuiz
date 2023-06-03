@@ -8,8 +8,13 @@
 /* AM Attributes*/
 @import "attributes";
 
+@import "mixins";
+
 /* Modules */
 @import 'modules/Header';
+@import 'modules/Announcements';
+@import 'modules/Basic';
+@import 'modules/TryQuiz';
 
 /* Set global styles */
 @import 'globals';

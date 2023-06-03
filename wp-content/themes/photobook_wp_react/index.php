@@ -14,50 +14,54 @@
 get_header();
 ?>
 <header am-Header="" am-Grid-Row="between middle">
-
+    <h2>LinguaQuiz</h2>
+    <ul am-Header-buttons="" am-Grid-Row="between middle">
+        <li am-Grid-Row="middle"><a am-Current-page href="">Главная</a></li>
+        <li am-Grid-Row="middle"><a href="">Предыдущие квизы</a></li>
+    </ul>
 </header>
-<!--<article id="l-announcement">-->
-<!--    <div class="announcements">-->
-<!--        <img src="--><?php //echo get_stylesheet_directory_uri() ?><!--/assets/img/slider/anonses.jpg" alt="">-->
-<!--    </div>-->
-<!--</article>-->
-<!--<section id="l-basic_information">-->
-<!--    <h1>Основная информация</h1>-->
-<!--    <article>-->
-<!--        <div>-->
-<!--            <h3>Что такое LinguaQuiz?</h3>-->
-<!--            <p><em>ЛингваКвиз</em> --->
-<!--                это уникальный конкурс для любителей языков и лингвистики, который проводится в разных школах города и финализируется в университете. Участники конкурса должны решать разнообразные задачи про языки мира, их историю, структуру и культуру.-->
-<!--            </p>-->
-<!--        </div>-->
-<!--        <div>-->
-<!--            <img src="--><?php //echo get_stylesheet_directory_uri() ?><!--/assets/img/basic/basic_1.png" alt="">-->
-<!--        </div>-->
-<!--    </article>-->
-<!--    <article>-->
-<!--        <div>-->
-<!--            <img src="--><?php //echo get_stylesheet_directory_uri() ?><!--/assets/img/basic/basic_2.png" alt="">-->
-<!--        </div>-->
-<!--        <div>-->
-<!--            <h3>Награды победителям</h3>-->
-<!--            <p>-->
-<!--                Победители получают ценные призы и возможность продолжить свое образование в области лингвистики. ЛингваКвиз - это не только проверка знаний, но и развитие логического мышления, творческого подхода и любознательности.-->
-<!--            </p>-->
-<!--        </div>-->
-<!--    </article>-->
-<!--</section>-->
-<!--<section id="l-trial_quiz">-->
-<!--    <article>-->
-<!--        <div>-->
-<!--            <h2>Пробный квиз</h2>-->
-<!--            <p>Вы хотите проверить свои знания и узнать что-то новое? Тогда пройдите наш пробный квиз и получите персональный результат!Ответьте на все вопросы и узнайте свой уровень знаний! Не упустите шанс стать умнее и веселее с нашим пробным квизом!</p>-->
-<!--            <button class="m-button__trial button js-button__trial">ПОПРОБОВАТЬ</button>-->
-<!--        </div>-->
-<!--        <div>-->
-<!--            <img src="--><?php //echo get_stylesheet_directory_uri() ?><!--/assets/img/trial_quiz/trial_quiz.png" alt="">-->
-<!--        </div>-->
-<!--    </article>-->
-<!--</section>-->
+<article am-Announcements="">
+    <div am-Announcements-image="">
+        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/slider/anonses.jpg" alt="">
+    </div>
+</article>
+<section am-Basic-information="" am-Grid-Col="middle">
+    <h1>Основная информация</h1>
+    <article am-Grid-Row="middle between">
+        <div am-Text-mini="basic">
+            <h3>Что такое LinguaQuiz?</h3>
+            <p><em>ЛингваКвиз</em> -
+                это уникальный конкурс для любителей языков и лингвистики, который проводится в разных школах города и финализируется в университете. Участники конкурса должны решать разнообразные задачи про языки мира, их историю, структуру и культуру.
+            </p>
+        </div>
+        <div am-Image-mini="basic">
+            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/basic/basic_1.png" alt="">
+        </div>
+    </article>
+    <article am-Grid-Row="middle between">
+        <div am-Image-mini="basic">
+            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/basic/basic_2.png" alt="">
+        </div>
+        <div am-Text-mini="basic">
+            <h3>Награды победителям</h3>
+            <p>
+                Победители получают ценные призы и возможность продолжить свое образование в области лингвистики. ЛингваКвиз - это не только проверка знаний, но и развитие логического мышления, творческого подхода и любознательности.
+            </p>
+        </div>
+    </article>
+</section>
+<section am-Try-quiz="background" am-Grid-Row="center">
+    <article am-Try-quiz="container" am-Grid-Row="between middle">
+        <div am-Text-mini="try" am-Grid-Col="between">
+            <h2>Пробный квиз</h2>
+            <p>Вы хотите проверить свои знания и узнать что-то новое? Тогда пройдите наш пробный квиз и получите персональный результат!Ответьте на все вопросы и узнайте свой уровень знаний! Не упустите шанс стать умнее и веселее с нашим пробным квизом!</p>
+            <button am-Button="try orange">ПОПРОБОВАТЬ</button>
+        </div>
+        <div am-Image-mini="try">
+            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/trial_quiz/trial_quiz.png" alt="">
+        </div>
+    </article>
+</section>
 <!--<footer id="l-footer">-->
 <!--    <article>-->
 <!--        <div class="l-contact_us">-->

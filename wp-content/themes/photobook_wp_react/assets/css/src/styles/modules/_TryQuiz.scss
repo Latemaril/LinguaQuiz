@@ -1,0 +1,14 @@
+[am-Try-quiz~="background"] {
+  height: 830px;
+  background: $orange--transparent;
+}
+
+[am-Try-quiz~="container"] {
+  margin: 170px 0;
+  width: 1030px;
+  height: 487px;
+
+  h2 {
+    font-weight: 500;
+  }
+}

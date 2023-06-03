@@ -1,0 +1,23 @@
+[am-Basic-information] {
+  padding: 200px 20px;
+  color: $night--dark;
+
+  h1, h3 {
+    font-weight: 500;
+  }
+
+  p {
+    padding-top: 45px;
+  }
+
+  article:first-of-type {
+    margin: 150px 0 140px;
+  }
+
+  article {
+    $container: 1030px;
+
+    width: $container;
+
+  }
+}
