@@ -34,6 +34,10 @@
 
     font-size: 25px;
     color: $night--dark;
+
+    &:hover:not([am-Current-page]) {
+      color: $blue;
+    }
   }
 
   [am-Current-page] {
@@ -47,13 +51,8 @@
 
       width: 100%;
 
-      border-bottom: 5px solid $blue;
+      border-bottom: 4px solid $blue;
       border-radius: 2px;
     }
   }
 }
-
-//[am-Current-page] {
-//  border-bottom: 4px solid #ff8502;
-//  border-radius: 2px;
-//}

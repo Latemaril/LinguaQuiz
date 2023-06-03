@@ -31,4 +31,3 @@
 </head>
 
 <body>
-<div id="page" class="site">

@@ -1,0 +1,78 @@
+[am-Quiz~="background"] {
+  height: 100%;
+}
+
+[am-Quiz~="background"] {
+  width: 100%;
+
+  background: $dark-blue--gradient;
+
+  overflow: auto;
+}
+
+[am-Quiz~="container"] {
+  margin: 60px 0 40px 0;
+
+  width: 850px;
+  height: max-content;
+
+  h1 {
+    @extend %vag;
+    font-weight: 600;
+    font-size: 70px;
+    letter-spacing: 3px;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: $orange--gradient;
+  }
+}
+
+[am-Quiz-forms] {
+  padding-top: 50px;
+
+  height: 100%;
+
+  gap: 70px;
+}
+
+[am-Quiz-form] {
+  @extend %montserrat;
+
+  min-width: 770px;
+  max-width: 770px;
+  min-height: 500px;
+
+  border-radius: 30px;
+  border: double 4px transparent;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #74BCED 0%, #52ACF2 33.33%, #2E9BF8 66.67%, #0085FF 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+  box-shadow: 0px 4px 20px 3px rgba(0, 0, 0, 0.3);
+}
+
+[am-Quiz-elements~="text"] {
+  margin-top: 70px;
+  padding: 10px;
+
+  width: 598px;
+  height: 147px;
+
+  box-shadow: 0px 0px 40px 15px rgba(60, 220, 255, 0.4);
+
+  border-radius: 15px;
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+[am-Quiz-elements~="answers"] {
+  margin-top: 57px;
+
+  input {
+    display: none;
+  }
+}

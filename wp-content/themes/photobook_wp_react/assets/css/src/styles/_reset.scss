@@ -43,3 +43,10 @@ table {
 *,*::before,*::after {
   box-sizing: border-box;
 }
+
+input, textarea {
+  resize: none;
+  background: none;
+  border: none;
+  outline: none;
+}

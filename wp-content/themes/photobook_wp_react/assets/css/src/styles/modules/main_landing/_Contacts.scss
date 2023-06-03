@@ -1,0 +1,94 @@
+[am-Contacts~="background"] {
+  height: 820px;
+  background: $white;
+}
+
+[am-Contacts~="container"] {
+  //padding: 59px 36px;
+  width: 926px;
+  height: 530px;
+  box-shadow: $blue--shadow;
+}
+
+[am-Feedback] {
+  padding: 59px 0;
+  flex-basis: 50%;
+  background: $blue-green--gradient;
+
+  h4 {
+    font-weight: 600;
+  }
+
+  button {
+    margin: 26px 0 0 36px;
+
+    align-self: flex-start;
+  }
+}
+
+[am-Forms] {
+  margin-top: 26px;
+
+  width: 390px;
+  height: 281px;
+}
+
+[am-Form] {
+  width: inherit;
+  border-bottom: 2px solid $black;
+
+  input, textarea {
+    height: inherit;
+    width: 100%;
+  }
+}
+
+[am-Form~="small"] {
+  height: 33px;
+}
+
+[am-Form~="large"] {
+  height: 137px;
+  width: 390px;
+}
+
+[am-Contact-us] {
+  flex-basis: 50%;
+  padding: 120px 0 67px 36px;
+}
+
+[am-Contact-us-sections] {
+  img {
+    max-width: 35px;
+  }
+  div {
+    gap: 15px;
+  }
+}
+
+[am-Contact-us-sections~="small"] {
+  height: 67px;
+
+  div {
+    height: 31px;
+  }
+  p {
+    font-weight: 300;
+    font-size: 16px;
+  }
+}
+
+[am-Contact-us-sections~="large"] {
+  height: 97px;
+
+  div:nth-of-type(1) {
+    height: 29px;
+  }
+  div:nth-of-type(2) {
+    height: 30px;
+    gap: 40px;
+  }
+  img {
+    max-width: 30px;
+  }
+}

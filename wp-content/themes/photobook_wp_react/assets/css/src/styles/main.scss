@@ -11,10 +11,13 @@
 @import "mixins";
 
 /* Modules */
-@import 'modules/Header';
-@import 'modules/Announcements';
-@import 'modules/Basic';
-@import 'modules/TryQuiz';
+@import 'modules/main_landing/Header';
+@import 'modules/main_landing/Announcements';
+@import 'modules/main_landing/Basic';
+@import 'modules/main_landing/TryQuiz';
+@import 'modules/main_landing/Contacts';
+
+@import 'modules/trial_quiz/Trial';
 
 /* Set global styles */
 @import 'globals';

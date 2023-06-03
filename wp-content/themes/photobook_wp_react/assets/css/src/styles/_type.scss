@@ -56,12 +56,56 @@
   url('../../../../../photobook_wp_react/assets/fonts/VAG_world_bold/vag_world_bold.svg#vag_world_bold') format('svg'); /* Chrome < 4, Legacy iOS */
 }
 
-
-%roboto {
-  font-family: "Roboto", sans-serif;
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Regular.eot');
+  src: local('../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat Regular'), local('Montserrat-Regular'),
+  url('../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Regular.woff2') format('woff2'),
+  url('../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Regular.woff') format('woff'),
+  url('../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-%vag {
-  font-family: "VAG World Bold", sans-serif;
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Bold.eot');
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+  url('../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Bold.woff2') format('woff2'),
+  url('../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Bold.woff') format('woff'),
+  url('../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Light.eot');
+  src: local('Montserrat Light'), local('Montserrat-Light'),
+  url('../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+  url('../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Light.woff2') format('woff2'),
+  url('../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Light.woff') format('woff'),
+  url('../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-LightItalic.eot');
+  src: local('Montserrat Light Italic'), local('Montserrat-LightItalic'),
+  url('../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-LightItalic.eot?#iefix') format('embedded-opentype'),
+  url('../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-LightItalic.woff2') format('woff2'),
+  url('../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-LightItalic.woff') format('woff'),
+  url('../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+
+
+
+
 

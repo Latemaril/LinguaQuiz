@@ -55,66 +55,59 @@ get_header();
         <div am-Text-mini="try" am-Grid-Col="between">
             <h2>Пробный квиз</h2>
             <p>Вы хотите проверить свои знания и узнать что-то новое? Тогда пройдите наш пробный квиз и получите персональный результат!Ответьте на все вопросы и узнайте свой уровень знаний! Не упустите шанс стать умнее и веселее с нашим пробным квизом!</p>
-            <button am-Button="try orange">ПОПРОБОВАТЬ</button>
+            <button am-Button="try orange" class="js-button__trial">ПОПРОБОВАТЬ</button>
         </div>
         <div am-Image-mini="try">
             <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/trial_quiz/trial_quiz.png" alt="">
         </div>
     </article>
 </section>
-<!--<footer id="l-footer">-->
-<!--    <article>-->
-<!--        <div class="l-contact_us">-->
-<!--            <div class="contact_us__container">-->
-<!--                <svg width="1227" height="611" viewBox="0 0 1227 611" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--                    <path d="M85.8859 63.8038C126.29 19.3954 188.345 -12.52 314.818 4.78557C441.29 22.0912 512.644 77.2845 605.652 37.6229C709.712 -6.75156 866.802 12.4419 950.917 37.6229C1035.03 62.8039 1009.08 57.5914 1135.02 114.835C1260.96 172.078 1227.87 207.135 1206.53 269.702C1185.18 332.27 1198.09 396.816 1206.53 463.175C1213.54 518.275 1204.14 539.127 1159.57 578.105C1115 617.083 1053.91 567.455 932.239 578.105C810.569 588.755 901.822 578.105 669.688 606.061C437.555 634.017 529.875 534.174 346.836 534.174C236.373 542.162 204.355 590.974 99.7608 534.174C-4.83312 477.375 -10.4271 391.288 8.50871 357.12C36.7899 306.089 15.0362 347.866 65.6081 269.702C112.792 212.351 23.9838 134.803 85.8859 63.8038Z" fill="#3222F6"/>-->
-<!--                </svg>-->
-<!--                <div class="contact_us">-->
-<!--                    <div class="communications">-->
-<!--                        <div class="contacts">-->
-<!--                            <div>-->
-<!--                                <img src="--><?php //echo get_stylesheet_directory_uri() ?><!--/assets/img/footer/contacts_icons/contact_icon.png" alt="">-->
-<!--                                <h5>КОНТАКТЫ</h5>-->
-<!--                            </div>-->
-<!--                            <p>+7 (999) 193-64 89, +7 (959) 222-74 19</p>-->
-<!--                        </div>-->
-<!--                        <div class="location">-->
-<!--                            <div>-->
-<!--                                <img src="--><?php //echo get_stylesheet_directory_uri() ?><!--/assets/img/footer/contacts_icons/gps_icon.png" alt="">-->
-<!--                                <h5>РАСПОЛОЖЕНИЕ</h5>-->
-<!--                            </div>-->
-<!--                            <p>г. Владивосток, ул. Гоголя, 41.</p>-->
-<!--                        </div>-->
-<!--                        <div class="socials">-->
-<!--                            <div>-->
-<!--                                <img src="--><?php //echo get_stylesheet_directory_uri() ?><!--/assets/img/footer/contacts_icons/socials_icon.png" alt="">-->
-<!--                                <h5>СОЦ СЕТИ И МЭССЕНДЖЕРЫ</h5>-->
-<!--                            </div>-->
-<!--                            <div class="social_links"></div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="feedback">-->
-<!--                        <h4>ОБРАТНАЯ СВЯЗЬ</h4>-->
-<!--                        <form class="m-form form">-->
-<!--                            <div class="input-container">-->
-<!--                                <input id="name" type="text" name="name" placeholder="Enter your Name" >-->
-<!--                            </div>-->
-<!--                        </form>-->
-<!--                        <form class="m-form form">-->
-<!--                            <div class="input-container">-->
-<!--                                <input id="email" type="text" name="email" placeholder="Enter a valid email address" >-->
-<!--                            </div>-->
-<!--                        </form>-->
-<!--                        <form class="m-form form-comment">-->
-<!--                            <textarea id="comment" name="comment" placeholder="Enter your message"></textarea>-->
-<!--                        </form>-->
-<!--                        <button class="m-button__feedback button">ОТПРАВИТЬ</button>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </article>-->
-<!--</footer>-->
+<footer am-Contacts="background" am-Grid-Row="center middle">
+    <article am-Contacts="container" am-Grid-Row="">
+        <section am-Contact-us="" am-Grid-Col="between">
+            <div am-Contact-us-sections="small" am-Grid-Col="between">
+                <div am-Grid-Row="middle">
+                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/footer/contacts_icons/contact_icon.png" alt="">
+                    <h5>КОНТАКТЫ</h5>
+                </div>
+                <p>+7 (999) 193-64 89,  +7 (959) 222-74 19</p>
+            </div>
+            <div am-Contact-us-sections="small" am-Grid-Col="between">
+                <div am-Grid-Row="middle">
+                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/footer/contacts_icons/gps_icon.png" alt="">
+                    <h5>РАСПОЛОЖЕНИЕ</h5>
+                </div>
+                <p>г. Владивосток, ул. Гоголя, 41.</p>
+            </div>
+            <div am-Contact-us-sections="large" am-Grid-Col="between">
+                <div am-Grid-Row="middle">
+                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/footer/contacts_icons/socials_icon.png" alt="">
+                    <h5>СОЦ СЕТИ И МЭССЕНДЖЕРЫ</h5>
+                </div>
+                <div am-Grid-Row="">
+                    <a href=""><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/footer/contacts_icons/vk_icon.png" alt=""></a>
+                    <a href=""><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/footer/contacts_icons/telegram_icon.png" alt=""></a>
+                    <a href=""><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/footer/contacts_icons/whatsapp_icon.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+        <section am-Feedback="" am-Grid-Col="middle">
+            <h4>ОБРАТНАЯ СВЯЗЬ</h4>
+            <div am-Forms="" am-Grid-Col="between">
+                <form am-Form="small">
+                    <input id="name" type="text" name="name" placeholder="Enter your Name" >
+                </form>
+                <form am-Form="small">
+                    <input id="email" type="email" name="email" placeholder="Enter a valid email address" >
+                </form>
+                <form am-Form="large">
+                    <textarea id="messege" type="text" name="message" placeholder="Enter your message"></textarea>
+                </form>
+            </div>
+            <button am-Button="blue contacts">ОТПРАВИТЬ</button>
+        </section>
+    </article>
+</footer>
 
 
 

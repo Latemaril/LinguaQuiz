@@ -43,6 +43,13 @@ table {
   box-sizing: border-box;
 }
 
+input, textarea {
+  resize: none;
+  background: none;
+  border: none;
+  outline: none;
+}
+
 /* Variables */
 @font-face {
   font-family: "Roboto";
@@ -77,10 +84,34 @@ table {
   src: url("../../../../../photobook_wp_react/assets/fonts/VAG_world_bold/vag_world_bold.eot"); /* IE 9 Compatibility Mode */
   src: url("../../../../../photobook_wp_react/assets/fonts/VAG_world_bold/vag_world_bold.eot?#iefix") format("embedded-opentype"), url("../../../../../photobook_wp_react/assets/fonts/VAG_world_bold/vag_world_bold.woff2") format("woff2"), url("../../../../../photobook_wp_react/assets/fonts/VAG_world_bold/vag_world_bold.woff") format("woff"), url("../../../../../photobook_wp_react/assets/fonts/VAG_world_bold/vag_world_bold.ttf") format("truetype"), url("../../../../../photobook_wp_react/assets/fonts/VAG_world_bold/vag_world_bold.svg#vag_world_bold") format("svg"); /* Chrome < 4, Legacy iOS */
 }
-[am-Header] h2 {
-  font-family: "VAG World Bold", sans-serif;
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Regular.eot");
+  src: local("../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat Regular"), local("Montserrat-Regular"), url("../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"), url("../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
-
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Bold.eot");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"), url("../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Light.eot");
+  src: local("Montserrat Light"), local("Montserrat-Light"), url("../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Light.eot?#iefix") format("embedded-opentype"), url("../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Light.woff2") format("woff2"), url("../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Light.woff") format("woff"), url("../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-LightItalic.eot");
+  src: local("Montserrat Light Italic"), local("Montserrat-LightItalic"), url("../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-LightItalic.woff2") format("woff2"), url("../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-LightItalic.woff") format("woff"), url("../../../../../photobook_wp_react/assets/fonts/Montserrat/Montserrat-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
 /* AM Attributes*/
 [am-Grid-Row] {
   box-sizing: border-box;
@@ -217,6 +248,14 @@ table {
   line-height: initial;
 }
 
+[am-Quiz~=container] h1, [am-Header] h2 {
+  font-family: "VAG World Bold", sans-serif;
+}
+
+[am-Quiz-form] {
+  font-family: "Montserrat", sans-serif;
+}
+
 /* Modules */
 [am-Header] {
   padding: 0 20px;
@@ -246,6 +285,9 @@ table {
   font-size: 25px;
   color: #131d39;
 }
+[am-Header-buttons] a:hover:not([am-Current-page]) {
+  color: #149ffd;
+}
 [am-Header-buttons] [am-Current-page]:before {
   content: "";
   position: absolute;
@@ -253,7 +295,7 @@ table {
   left: 0;
   right: 0;
   width: 100%;
-  border-bottom: 5px solid #149ffd;
+  border-bottom: 4px solid #149ffd;
   border-radius: 2px;
 }
 
@@ -306,14 +348,164 @@ table {
   margin: 170px 0;
   width: 1030px;
   height: 487px;
+  color: #131d39;
 }
 [am-Try-quiz~=container] h2 {
   font-weight: 500;
 }
 
+[am-Contacts~=background] {
+  height: 820px;
+  background: #ffffff;
+}
+
+[am-Contacts~=container] {
+  width: 926px;
+  height: 530px;
+  box-shadow: 0px 0px 50px 10px rgba(143, 207, 255, 0.5);
+}
+
+[am-Feedback] {
+  padding: 59px 0;
+  flex-basis: 50%;
+  background: linear-gradient(143.11deg, rgba(16, 157, 253, 0.22) 0%, rgba(16, 210, 214, 0.22) 60.08%, rgba(16, 253, 182, 0.22) 99.44%);
+}
+[am-Feedback] h4 {
+  font-weight: 600;
+}
+[am-Feedback] button {
+  margin: 26px 0 0 36px;
+  align-self: flex-start;
+}
+
+[am-Forms] {
+  margin-top: 26px;
+  width: 390px;
+  height: 281px;
+}
+
+[am-Form] {
+  width: inherit;
+  border-bottom: 2px solid #000000;
+}
+[am-Form] input, [am-Form] textarea {
+  height: inherit;
+  width: 100%;
+}
+
+[am-Form~=small] {
+  height: 33px;
+}
+
+[am-Form~=large] {
+  height: 137px;
+  width: 390px;
+}
+
+[am-Contact-us] {
+  flex-basis: 50%;
+  padding: 120px 0 67px 36px;
+}
+
+[am-Contact-us-sections] img {
+  max-width: 35px;
+}
+[am-Contact-us-sections] div {
+  gap: 15px;
+}
+
+[am-Contact-us-sections~=small] {
+  height: 67px;
+}
+[am-Contact-us-sections~=small] div {
+  height: 31px;
+}
+[am-Contact-us-sections~=small] p {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+[am-Contact-us-sections~=large] {
+  height: 97px;
+}
+[am-Contact-us-sections~=large] div:nth-of-type(1) {
+  height: 29px;
+}
+[am-Contact-us-sections~=large] div:nth-of-type(2) {
+  height: 30px;
+  gap: 40px;
+}
+[am-Contact-us-sections~=large] img {
+  max-width: 30px;
+}
+
+[am-Quiz~=background] {
+  height: 100%;
+}
+
+[am-Quiz~=background] {
+  width: 100%;
+  background: linear-gradient(90deg, #0F67EB 0%, #327FF2 33.33%, #5697F8 66.67%, #79AFFF 100%);
+  overflow: auto;
+}
+
+[am-Quiz~=container] {
+  margin: 60px 0 40px 0;
+  width: 850px;
+  height: max-content;
+}
+[am-Quiz~=container] h1 {
+  font-weight: 600;
+  font-size: 70px;
+  letter-spacing: 3px;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(267.62deg, rgb(255, 144, 64) 0%, rgb(244, 128, 44) 30.73%, rgb(231, 108, 19) 69.79%, rgb(255, 121, 24) 100%);
+}
+
+[am-Quiz-forms] {
+  padding-top: 50px;
+  height: 100%;
+  gap: 70px;
+}
+
+[am-Quiz-form] {
+  min-width: 770px;
+  max-width: 770px;
+  min-height: 500px;
+  border-radius: 30px;
+  border: double 4px transparent;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #74BCED 0%, #52ACF2 33.33%, #2E9BF8 66.67%, #0085FF 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-shadow: 0px 4px 20px 3px rgba(0, 0, 0, 0.3);
+}
+
+[am-Quiz-elements~=text] {
+  margin-top: 70px;
+  padding: 10px;
+  width: 598px;
+  height: 147px;
+  box-shadow: 0px 0px 40px 15px rgba(60, 220, 255, 0.4);
+  border-radius: 15px;
+}
+[am-Quiz-elements~=text] p {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+
+[am-Quiz-elements~=answers] {
+  margin-top: 57px;
+}
+[am-Quiz-elements~=answers] input {
+  display: none;
+}
+
 /* Set global styles */
 html, body {
   min-height: 100%;
+  height: 100%;
   font-family: "Roboto", sans-serif;
   text-rendering: optimizeLegibility;
   background: #ffffff;
@@ -321,7 +513,11 @@ html, body {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
 }
 
 h1 {
