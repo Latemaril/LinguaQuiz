@@ -49,4 +49,9 @@ input, textarea {
   background: none;
   border: none;
   outline: none;
+  margin: 0;
+}
+
+input[type="radio"] {
+  all: unset;
 }

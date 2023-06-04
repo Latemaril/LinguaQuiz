@@ -1,51 +1,51 @@
-[am-Grid-Row] {
+[am-Flex-Row] {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
 }
 
-[am-Grid-Col] {
+[am-Flex-Col] {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
 }
 
 /* Reverse order */
-[am-Grid-Row~="reverse"] {
+[am-Flex-Row~="reverse"] {
   flex-direction: row-reverse;
   flex-wrap: wrap-reverse;
 }
 
 /* Distribution */
-[am-Grid-Row~="between"] { justify-content: space-between; }
-[am-Grid-Row~="center"] { justify-content: center; }
-[am-Grid-Col~="between"] { justify-content: space-between; }
+[am-Flex-Row~="between"] { justify-content: space-between; }
+[am-Flex-Row~="center"] { justify-content: center; }
+[am-Flex-Col~="between"] { justify-content: space-between; }
 
 /* Alignment per row */
 /* Horizontal */
-[am-Grid-Row~="start"] {
+[am-Flex-Row~="start"] {
   justify-content: flex-start;
   text-align: start;
 }
 
-[am-Grid-Row~="end"] {
+[am-Flex-Row~="end"] {
   justify-content: flex-end;
   text-align: end;
 }
 
-[am-Grid-Row~="center"] {
+[am-Flex-Row~="center"] {
   justify-content: center;
 }
 
 /* Vertical */
-[am-Grid-Row~="top"] { align-items: flex-start; }
-[am-Grid-Row~="bottom"] { align-items: flex-end; }
-[am-Grid-Row~="middle"] { align-items: center; }
+[am-Flex-Row~="top"] { align-items: flex-start; }
+[am-Flex-Row~="bottom"] { align-items: flex-end; }
+[am-Flex-Row~="middle"] { align-items: center; }
 
 /* Alignment per column */
-[am-Grid-Col~="top"] { align-items: flex-start; }
-[am-Grid-Col~="bottom"] { align-items: flex-end; }
-[am-Grid-Col~="middle"] { align-items: center; }
+[am-Flex-Col~="top"] { align-items: flex-start; }
+[am-Flex-Col~="bottom"] { align-items: flex-end; }
+[am-Flex-Col~="middle"] { align-items: center; }
 
 /* Custom for landing */
 [am-Image-mini] {
@@ -85,8 +85,6 @@
   font-weight: 600;
   color: #FFFFFF;
 
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
   border-radius: 5px;
   border: none;
 }
@@ -96,6 +94,8 @@
   height: 69px;
 
   font-size: 32px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 [am-Button~="contacts"] {
@@ -103,6 +103,26 @@
   height: 46px;
 
   font-size: 20px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+[am-Button~="quiz"] {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+[am-Button~="blue-gradient"] {
+  font-size: 16px;
+  font-weight: 400;
+
+  color: $black;
+
+  border-radius: 30px;
+  border: double 1px transparent;
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), radial-gradient(circle at top left, #00B0FC 0%, #00CEEC 24.48%, #0FAAE6 52.08%, #1A8FE2 76.56%, #4016E6 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
 
 [am-Button~="orange"] {
