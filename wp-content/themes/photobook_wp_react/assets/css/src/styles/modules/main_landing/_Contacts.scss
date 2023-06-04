@@ -38,8 +38,13 @@
   border-bottom: 2px solid $black;
 
   input, textarea {
+    @extend %roboto;
     height: inherit;
     width: 100%;
+  }
+
+  input::placeholder, textarea::placeholder {
+    color: #a6a6a6;
   }
 }
 

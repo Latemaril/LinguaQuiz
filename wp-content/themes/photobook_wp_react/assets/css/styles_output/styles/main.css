@@ -248,6 +248,10 @@ input, textarea {
   line-height: initial;
 }
 
+[am-Form] input, [am-Form] textarea {
+  font-family: "Roboto", sans-serif;
+}
+
 [am-Quiz~=container] h1, [am-Header] h2 {
   font-family: "VAG World Bold", sans-serif;
 }
@@ -391,6 +395,9 @@ input, textarea {
 [am-Form] input, [am-Form] textarea {
   height: inherit;
   width: 100%;
+}
+[am-Form] input::placeholder, [am-Form] textarea::placeholder {
+  color: #a6a6a6;
 }
 
 [am-Form~=small] {
