@@ -11,9 +11,8 @@
     background: $blue--gradient;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    filter: drop-shadow(2px 2px #545454);
   }
-
-
 }
 
 [am-Header-buttons] {

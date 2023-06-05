@@ -36,6 +36,8 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 function add_js_to_head() {
     echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>';
+    echo "<link rel='stylesheet' href='https://unpkg.com/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.css' />";
+    echo "<script src='https://unpkg.com/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.js'></script>";
 }
 // Add hook for admin <head></head>
 add_action( 'admin_head', 'add_js_to_head' );

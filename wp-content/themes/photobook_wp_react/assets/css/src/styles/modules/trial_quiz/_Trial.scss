@@ -66,11 +66,15 @@
 }
 
 [am-Quiz-elements~="picture"] {
+  object-fit: contain;
+
   margin-top: 70px;
   width: 450px;
   height: 218px;
 
   img {
+    width: unset;
+    max-width: 100%;
     object-fit: contain;
   }
 }

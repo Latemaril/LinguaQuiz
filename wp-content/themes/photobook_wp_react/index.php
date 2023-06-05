@@ -1,27 +1,22 @@
 <?php
-/**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package photobook
- */
+
 get_header();
 ?>
 <header am-Header="" am-Flex-Row="between middle">
     <h2>LinguaQuiz</h2>
     <ul am-Header-buttons="" am-Flex-Row="between middle">
         <li am-Flex-Row="middle"><a am-Current-page href="">Главная</a></li>
-        <li am-Flex-Row="middle"><a href="">Предыдущие квизы</a></li>
+        <li am-Flex-Row="middle"><a class="js-button__archive">Предыдущие квизы</a></li>
     </ul>
 </header>
 <article am-Announcements="">
     <div am-Announcements-image="">
+        <div am-Announcements-text="" am-Flex-Col="middle">
+            <h2>Добро пожаловать на LinguaQuiz!</h2>
+            <p>Мы рады приветствовать вас на нашем увлекательном сайте, посвященном языковым квизам. Здесь вы найдете уникальную возможность проверить свои знания и развить навыки в различных языках.
+            </p>
+            <h1>GO!</h1>
+        </div>
         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/slider/anonses.jpg" alt="">
     </div>
 </article>
